@@ -3,6 +3,7 @@
 # Titel
 OBA vestigingen pagina, je kan zien hoeveel studieplekken er beschikbaar zijn per vestiging.
 
+Dit is mijn user story: Als student wil ik thuis kunnen zien of er nog studieplekken beschikbaar zijn (ook plekken voor m'n laptop) zodat ik kan plannen wanneer ik bij de OBA ga studeren.
 ## Inhoudsopgave
 
   * [Beschrijving](#beschrijving)
