@@ -156,3 +156,7 @@ footer{
 .header-link{
     float: right;
 }
+
+.linker-rij{
+    display: flex;
+}
