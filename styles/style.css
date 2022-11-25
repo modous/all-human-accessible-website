@@ -172,10 +172,10 @@ footer{
 
 
 .button1{
-background-color: red;
+background-color: rgb(224, 0, 0);
 color: white;
 padding: 5px;
-border-color: red;
+border-color: rgb(198, 0, 0);
 font-size: large;
 margin-bottom: 3px;
 
