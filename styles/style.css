@@ -3,46 +3,7 @@ body{
     margin-bottom: 0px;
     
 }
-
-.search{
-    box-sizing: border-box;
-    padding: 6px;
-    border: 1px solid grey;
-    background: #f1f1f1;
-    margin:auto;
-    max-width:265px;
-    margin-top: 7px;
-    text-align: center;
-}
-
-.mapouter{
-    margin-top: 2%;
-    margin-left: 20%;
-    padding-right: 20%;
-}
-
-.locaties{
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.oba{
-    margin-top: 5px;
-    padding-bottom: 0px;
-    margin-bottom: 10px;
-    margin-left: 10%;
-    font-size: 80px;
-    font-family: avenir black;
-    color:red;
-}
-
-#map {
-    margin: 0 auto;
-    width: 50%;
-    height: 500px;
-    border: thin solid black;
-    margin-bottom: 25px;
-  }
+/* navigatie */
 
 nav ul{
     list-style-type: none;
@@ -54,8 +15,8 @@ nav ul{
     line-height: 26px;
     text-transform: lowercase;
     text-decoration: none;
-    
 }
+
 li{
     display: inline;
     padding: 30px;
@@ -114,6 +75,51 @@ color:red;
 }
 
 
+
+
+/* Map */
+
+.mapouter{
+    margin-top: 2%;
+    margin-left: 20%;
+    padding-right: 20%;
+}
+
+#map {
+    margin: 0 auto;
+    width: 50%;
+    height: 500px;
+    border: thin solid black;
+    margin-bottom: 25px;
+  }
+
+
+  /* Titel boven map */
+
+.locaties{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Logo */
+
+.oba{
+    margin-top: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    font-size: 80px;
+    font-family: avenir black;
+    color:red;
+}
+
+
+
+
+
+
+/* Footer */
+
 footer{
     height: 500px;
     background-color: #000000;
@@ -148,10 +154,13 @@ footer{
 
 .Hfooter a{
     display: grid;
-    color: aqua;
+    color: white;
 
 }
 
+.Hfooter a:hover{
+    color: red;
+}
 
 .header-link{
     float: right;
@@ -159,4 +168,15 @@ footer{
 
 .linker-rij{
     display: flex;
+}
+
+
+.button1{
+background-color: red;
+color: white;
+padding: 5px;
+border-color: red;
+font-size: large;
+margin-bottom: 3px;
+
 }

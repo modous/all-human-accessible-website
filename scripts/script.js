@@ -8,17 +8,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
-const Icon = L.Icon.extend({
-    options: {
-      iconUrl: "./assets/marker.png",
-      shadowUrl: "",
-      iconSize: [32.31, 39.65],
-      shadowSize: [],
-      iconAnchor: [16, 39],
-      shadowAnchor: [],
-      popupAnchor: [-3, -76],
-    },
-  });
 
 
 // var marker = L.marker([52.3759250759437, 4.908394762488651]).addTo(map);
@@ -27,28 +16,22 @@ const Icon = L.Icon.extend({
 // var marker3 = L.marker([52.353327900638206, 4.906540513404021]).addTo(map);
 
 
-// marker.bindPopup("<h1>Oosterdokskade</h1>"+
-// "<h3>Aantal studieplekken: 50</h3>").openPopup();
-// marker1.bindPopup("<h1>Spaarndammerstraat</h1>"+
-// "<h3>Aantal studieplekken: 44</h3>").openPopup();
-// marker2.bindPopup("<h1>Javaplein</h1>"+
-// "<h3>Aantal studieplekken: 10</h3>").openPopup();
-// marker3.bindPopup("<h1>CC amstel</h1>"+
-// "<h3>Aantal studieplekken: 25</h3>").openPopup();
 
 document.querySelectorAll("button").forEach((element) => {
     let lat = element.dataset.lat;
     let long = element.dataset.long;
 
-    L.marker([lat, long], {
-        icon: new Icon(),
-      }).addTo(map);
+    L.marker([lat, long]).addTo(map);
    
 
     element.addEventListener("click", function () {
         map.flyTo([lat, long], 17, {
           duration: 2,
         });
+        var tooltip = L.tooltip()
+        .setLatLng([lat, long])
+        .setContent('9 Studieplekken')
+        .addTo(map);
       });
     });
 
