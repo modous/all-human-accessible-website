@@ -93,6 +93,12 @@ color:red;
     margin-bottom: 25px;
   }
 
+  @media (min-width: 850px){
+    #map{
+        display: flex;
+    }
+}
+
 
   /* Titel boven map */
 
@@ -166,9 +172,13 @@ footer{
     float: right;
 }
 
-.linker-rij{
-    display: flex;
+@media (min-width: 850px){
+    .linker-rij{
+        display: flex;
+    }
 }
+
+
 
 
 .button1{
