@@ -20,6 +20,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 document.querySelectorAll("button").forEach((element) => {
     let lat = element.dataset.lat;
     let long = element.dataset.long;
+    let variable = element.dataset.var;
 
     L.marker([lat, long]).addTo(map);
    
@@ -30,7 +31,7 @@ document.querySelectorAll("button").forEach((element) => {
         });
         var tooltip = L.tooltip()
         .setLatLng([lat, long])
-        .setContent('9 Studieplekken')
+        .setContent(variable)
         .addTo(map);
       });
     });
